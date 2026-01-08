@@ -2,8 +2,8 @@
 ```
 PAPERS/
 ├── INDEX/
-├── 01_Loss_Objective/
-├── 02_Architecture/
+├── 01_Architecture/
+├── 02_Loss_Objective/
 ├── 03_Training_Strategy/
 ├── 04_Dataset_Protocol/
 ├── 05_Theory_Math/
@@ -13,11 +13,11 @@ PAPERS/
 
 논문의 주된 기여 형태에 따른 분류
 
-- Loss / Objective 기반
-    - ArcFace, CosFace, SphereFace, Sub-center 계열
-
 - Architecture 기반
     - CNN → ViT, Hybrid, Attention 구조 변경
+
+- Loss / Objective 기반
+    - ArcFace, CosFace, SphereFace, Sub-center 계열
 
 - Training Strategy 기반
     - Large batch, curriculum, sampler, augmentation
@@ -27,6 +27,32 @@ PAPERS/
 
 - Theoretical / Mathematical
     - 수식 해석, 수렴 분석, Bayesian 관점, geometry
+
+### Architecture 기반 (Backbone / 구조)
+```
+02_Architecture/
+├── CNN/
+│   ├── ResNet/
+│   ├── MobileNet/
+│   └── EfficientNet/
+├── ViT/
+│   ├── Vanilla_ViT/
+│   ├── Face_ViT/
+│   └── Patch_Modification/
+├── Hybrid_CNN_ViT/
+├── Attention_Module/
+│   ├── SE_CBAM/
+│   └── Transformer_Block/
+└── README.md
+```
+
+📌 기준:
+
+- Loss는 기존 것 사용
+
+- Backbone 구조 변경이 핵심 기여
+
+- ViT-based Face Recognition 논문은 전부 여기
 
 ### Loss / Objective 기반
 ```
@@ -59,32 +85,6 @@ PAPERS/
 - Gradient 변화
 
 - 실험에서 민감한 하이퍼파라미터
-
-### Architecture 기반 (Backbone / 구조)
-```
-02_Architecture/
-├── CNN/
-│   ├── ResNet/
-│   ├── MobileNet/
-│   └── EfficientNet/
-├── ViT/
-│   ├── Vanilla_ViT/
-│   ├── Face_ViT/
-│   └── Patch_Modification/
-├── Hybrid_CNN_ViT/
-├── Attention_Module/
-│   ├── SE_CBAM/
-│   └── Transformer_Block/
-└── README.md
-```
-
-📌 기준:
-
-- Loss는 기존 것 사용
-
-- Backbone 구조 변경이 핵심 기여
-
-- ViT-based Face Recognition 논문은 전부 여기
 
 ### Training Strategy 기반
 ```
@@ -161,9 +161,9 @@ PAPERS/
 
 ## 파일 네이밍 규칙
 ```
-YEAR_FirstAuthor_Keyword.pdf
+[Year]_[Venue]_[FirstAuthor]_[ShortTitle].pdf
 
-2019_Deng_ArcFace.pdf
+2020_CVPR_Deng_RetinaFace.pdf
 2021_An_ViTFace.pdf
 2023_Song_BayesianDiffusion.pdf
 ```
