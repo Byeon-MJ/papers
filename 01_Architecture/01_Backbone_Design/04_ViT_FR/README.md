@@ -1,0 +1,3 @@
+- TransFace (ICCV 2023)
+  - Type: ViT-based Backbone Design
+  - Subtype: Token-level representation redesign
