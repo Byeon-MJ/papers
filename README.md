@@ -2,6 +2,7 @@
 ```
 PAPERS/
 ├── INDEX/
+├── 00_Inbox/
 ├── 01_Architecture/
 ├── 02_Loss_Objective/
 ├── 03_Training_Strategy/
@@ -30,7 +31,7 @@ PAPERS/
 
 ### Architecture 기반 (Backbone / 구조)
 ```
-02_Architecture/
+01_Architecture/
 ├── CNN/
 │   ├── ResNet/
 │   ├── MobileNet/
@@ -56,7 +57,7 @@ PAPERS/
 
 ### Loss / Objective 기반
 ```
-01_Loss_Objective/
+02_Loss_Objective/
 ├── ArcFace/
 │   ├── 2019_ArcFace_AdditiveAngularMargin.pdf
 │   ├── notes.md
